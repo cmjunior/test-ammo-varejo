@@ -1,0 +1,50 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+input {
+  width: 100%;
+  height: 40px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 60px;
+  padding-left: 32px;
+  padding-right: 14px;
+}
+
+.header {
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: hsl(220, 12%, 95%);
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  height: 40px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.searchWrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.searchWrapper:after {
+  font-family: "FontAwesome";
+  content: "\f002";
+  position: absolute;
+  left: 14px;
+  top: 14px;
+}
